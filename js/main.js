@@ -1,31 +1,23 @@
 
-
-function displayTime() {
-    let date = new Date()
-    let hour = date.getHours();
-    let mins = date.getMinutes();
-    let secs = date.getSeconds();
-    let amORpm = "AM";
-
-    if (hour < 12) {
-        amORpm = "AM";
-    }
-    if (hour > 12) {
-        hour -= 12;
-        amORpm = "PM";
-    }
-	//simpler than if statements  asically if less than ten, add 0 to beginning, else just put value
-    hour = hour < 10 ? "0" + hour : hour; 
-    mins = mins < 10 ? "0" + mins : mins;
-    secs = secs < 10 ? "0" + secs : secs;
-
-
-    let currentTime = hour + ":" + mins + ":" + secs + amORpm
-
-
-    document.getElementById("digitalClockTime")
-        .innerHTML = currentTime
+function currentTime() {
+  let date = new Date(); 
+  let hour = date.getHours();
+  let min = date.getMinutes();
+  let sec = date.getSeconds();
+  hour = updateTime(hour);
+  min = updateTime(min);
+  sec = updateTime(sec);
+  document.getElementById("clock").innerText = hour + " : " + min + " : " + sec; /* adding time to the div */
+    let t = setTimeout(function(){ currentTime() }, 1000); /* setting timer */
 }
 
+function updateTime(k) {
+  if (k < 10) {
+    return "0" + k;
+  }
+  else {
+    return k;
+  }
+}
 
-setInterval(displayTime, 1000);
+currentTime(); /* calling currentTime() function to initiate the process */
