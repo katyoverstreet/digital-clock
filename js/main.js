@@ -45,7 +45,7 @@ function displayClock() {
         tfHours = (24 - tfHours) - 12;
     }
 
-    let hourstw = Math.abs(tfHours);
+    hourstw = Math.abs(tfHours);
     
     //just adding 0s
     if (hourstw < 10) {
