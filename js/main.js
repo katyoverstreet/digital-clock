@@ -23,6 +23,7 @@ function makeNormal() {
     }
 
 }
+setInterval(displayClock, 1000);
 //if normal button is pushed make it false
 function displayClock() {
 
@@ -66,7 +67,7 @@ function displayClock() {
     
 }
 
-setInterval(displayClock, 1000);
+
 
  displayClock(); 
 
