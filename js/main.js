@@ -28,4 +28,4 @@ function displayTime() {
 }
 
 
-
+setInterval(displayTime, 1000);
