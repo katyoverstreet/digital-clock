@@ -60,7 +60,7 @@ function displayClock() {
 
 	//this whole section is just adding 0s
   
-    let timeNow = hoursin12 + ':' + minutes + ':' + seconds + amOrPm;
+    let timeNow = hourstw + ':' + minutes + ':' + seconds + amOrPm;
     
     clock.innerHTML = timeNow;
   //making the output show the work
