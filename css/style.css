@@ -1,1 +1,31 @@
-
+#clock {
+  font-family: serif;
+  font-size: 7em;
+  font-weight: bolder;
+  width: 250px;
+  color: black;
+  text-align: center;
+  border: 1px black;
+  border-radius: 1px;
+  margin: auto;
+  margin-top: 400px;
+  margin-left: 350px;
+  
+}
+  
+#btn {
+  background-color: transparent;
+  color: black;
+  font-size: 20px;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  max-width: 250px;
+  align-items: center;
+  border: 20px black;
+  margin-left: 400px;
+  margin-right: 400px;
+   
+  
+   
+}
