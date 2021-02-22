@@ -68,7 +68,7 @@ function displayClock() {
 
 setInterval(displayClock, 1000);
 
-/* displayClock(); 
-Think I need but ight not, let's see
+ displayClock(); 
 
-*/ 
+
+
