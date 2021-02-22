@@ -1,19 +1,1 @@
-body {
-  background-color: cadetblue
-}
 
-#clock {
-  font-family: serif;
-  font-size: 4em;
-  font-weight: bolder;
-  width: 300px;
-  color: black;
-  text-align: center;
-  border: 1px black;
-  border-radius: 1px;
-  margin: auto;
-  margin-top: 400px;
-  margin-left: 350px;
-  
-}
-  
