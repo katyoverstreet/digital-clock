@@ -1,4 +1,17 @@
+<head> 
+    <title> Digital Clock </title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
 
+
+<body onload="setInterval(displayTime(), 1000)">
+    <div id="digitalClockTime" class="clock"> </div>
+    <script src="js/main.js"></script> 
+</body>
+
+
+/*
 const clock = document.getElementById('clock'); //creating clock var and setting its value
 
 const setTwelve = document.querySelector('.btn');
@@ -67,7 +80,7 @@ function displayClock() {
     
 }
 
-
+*/
 
  displayClock(); 
 
