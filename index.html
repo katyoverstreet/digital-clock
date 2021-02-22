@@ -1,20 +1,23 @@
 
 <!DOCTYPE html>
+
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="CSS/style.css">
-        <meta charset="UTF-8">
-        <title>Digital Clock</title>
+   <head> 
+   
+       <meta charset= "UTF-8">
+    
+       <title> Digital Clock </title>
+   
+       <link rel="stylesheet" href="css/style.css">
+   
     </head>
-     <body>
-       
-    <div id="clock">00:00:00</div>
-<div class="btn">
-  <div id="twelveHour">
-      <button id='btn'>12 Hour</button>     
-        <div id="twentyFourHour">
-          <button id='btn'>24 Hour</button>
-         </div>     
+    
+    <body onload="setInterval(displayTime(), 1000)">
+    
+     <div id="digitalClockTime" class="clock"> </div>
+    
+        <script src="js/main.js"></script> 
+    
     </body>
-    <script src="JS/main.js"></script>
+
 </html>
